@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE - Premium Fashion & Lifestyle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">LUXE</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="products.html" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#collections" class="nav-link">#Collections</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">#About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">#Contact</a>
+                </li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#" class="nav-icon search-icon">
+                    <i class="fas fa-search"></i>
+                </a>
+                <a href="cart.html" class="nav-icon cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="hero-line">Luxury</span>
+                    <span class="hero-line">Redefined</span>
+                </h1>
+                <p class="hero-subtitle">Discover our exclusive collection of premium fashion and lifestyle products crafted for the discerning individual.</p>
+                <div class="hero-buttons">
+                    <a href="products.html" class="btn btn-primary">Shop Collection</a>
+                    <a href="#featured" class="btn btn-secondary">Explore</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Luxury Fashion" class="hero-img">
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured" id="featured">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Collection</h2>
+                <p class="section-subtitle">Handpicked pieces that define luxury and elegance</p>
+            </div>
+            <div class="featured-grid">
+                <div class="featured-item" data-category="bags">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80" alt="Luxury Handbag">
+                        <div class="featured-overlay">
+                            <a href="product-detail.html?id=1" class="btn btn-white">View Details</a>
+                        </div>
+                    </div>
+                    <div class="featured-info">
+                        <h3 class="featured-name">Premium Leather Handbag</h3>
+                        <p class="featured-price">$2,499</p>
+                    </div>
+                </div>
+                <div class="featured-item" data-category="watches">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1999&q=80" alt="Luxury Watch">
+                        <div class="featured-overlay">
+                            <a href="product-detail.html?id=2" class="btn btn-white">View Details</a>
+                        </div>
+                    </div>
+                    <div class="featured-info">
+                        <h3 class="featured-name">Swiss Chronograph Watch</h3>
+                        <p class="featured-price">$8,999</p>
+                    </div>
+                </div>
+                <div class="featured-item" data-category="shoes">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2012&q=80" alt="Designer Shoes">
+                        <div class="featured-overlay">
+                            <a href="product-detail.html?id=3" class="btn btn-white">View Details</a>
+                        </div>
+                    </div>
+                    <div class="featured-info">
+                        <h3 class="featured-name">Italian Leather Shoes</h3>
+                        <p class="featured-price">$1,299</p>
+                    </div>
+                </div>
+                <div class="featured-item" data-category="accessories">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=3558&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Luxury Sunglasses">
+                        <div class="featured-overlay">
+                            <a href="product-detail.html?id=4" class="btn btn-white">View Details</a>
+                        </div>
+                    </div>
+                    <div class="featured-info">
+                        <h3 class="featured-name">Designer Sunglasses</h3>
+                        <p class="featured-price">$899</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections -->
+    <section class="collections" id="collections">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Collections</h2>
+                <p class="section-subtitle">Curated collections for every occasion</p>
+            </div>
+            <div class="collections-grid">
+                <div class="collection-item large">
+                    <div class="collection-image">
+                        <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Women's Collection">
+                    </div>
+                    <div class="collection-content">
+                        <h3 class="collection-title">Women's Collection</h3>
+                        <p class="collection-description">Elegant pieces for the modern woman</p>
+                        <a href="products.html?category=women" class="collection-link">Explore Collection</a>
+                    </div>
+                </div>
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Men's Collection">
+                    </div>
+                    <div class="collection-content">
+                        <h3 class="collection-title">Men's Collection</h3>
+                        <p class="collection-description">Sophisticated style for gentlemen</p>
+                        <a href="products.html?category=men" class="collection-link">Explore Collection</a>
+                    </div>
+                </div>
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Accessories Collection">
+                    </div>
+                    <div class="collection-content">
+                        <h3 class="collection-title">Accessories</h3>
+                        <p class="collection-description">Perfect finishing touches</p>
+                        <a href="products.html?category=accessories" class="collection-link">Explore Collection</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="about-title">Crafting Excellence Since 1985</h2>
+                    <p class="about-description">At LUXE, we believe that true luxury lies in the perfect fusion of timeless design, exceptional craftsmanship, and uncompromising quality. Each piece in our collection tells a story of dedication, artistry, and the pursuit of perfection.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3 class="stat-number">38</h3>
+                            <p class="stat-label">Years of Excellence</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="stat-number">50+</h3>
+                            <p class="stat-label">Countries Served</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="stat-number">100K+</h3>
+                            <p class="stat-label">Satisfied Customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Luxury Craftsmanship">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">Stay in Touch</h2>
+                <p class="newsletter-subtitle">Be the first to know about new collections and exclusive offers</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">LUXE</h3>
+                    <p class="footer-description">Redefining luxury through exceptional craftsmanship and timeless design.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="products.html?category=women">Women</a></li>
+                        <li><a href="products.html?category=men">Men</a></li>
+                        <li><a href="products.html?category=accessories">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Care Instructions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LUXE. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
